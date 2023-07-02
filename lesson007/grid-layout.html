@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .container {
+            display: grid;
+            max-width: 900px;
+            min-width: 50vh;
+            grid-template-columns: 100%;
+            grid-template-rows: auto auto 1fr auto auto;
+            grid-template-areas: "header" "left" "main" "right" "footer";
+        }
+
+        @media (min-width: 440px) {
+            .container {
+                grid-template-columns: 150px 1fr 150px;
+                grid-template-rows: auto 1fr auto;
+                grid-template-areas: 
+                    "header header header"
+                    "left main right"
+                    "footer footer footer"
+                ;
+            }
+        }
+
+        .header {
+            grid-area: header;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        .main {
+            grid-area: main;
+            padding: 25px;
+        }
+
+        .left {
+            grid-area: left;
+            background-color: peachpuff;
+        }
+
+        .right {
+            grid-area: right;
+        }
+
+        .footer {
+            grid-area: footer;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        .sidebar {
+            padding: 25px;
+            background-color: darkcyan;
+        }
+
+        /* 
+        The grid template areas are defined as "header" "left" "main" "right" "footer" but for a small device with a screen width of 440px or less, it is defined as "header header header" "left main right" "footer footer footer" using a media query.
+
+        The grid-rows property value also changes based on the media query.
+
+        The values for the number of rows you add for grid-template-rows and number of columns you add for grid-template-columns must match the dimensions of the grid-template-areas.  
+
+        grid-area that has undefined rules will appear empty. (Does not happen with the example above.)
+
+        Each CSS rule specifies which grid area they belong to by using the grid-area CSS property.
+
+        The selectors of each rule used are element tags in HTML or classes, as we have used here. 
+        */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header"> Header </header>
+        <main class="main"> Content </main>
+        <div class="sidebar left"> Sidebar </div>
+        <div class="sidebar right"> Sidebar </div>
+        <footer class="footer"> Footer </footer>
+    </div>
+</body>
+</html>
