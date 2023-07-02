@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        .flex-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: flex-end;
+            gap: 10px;
+
+            flex: 0 1 auto;
+            /* 
+            Here for the flex-container class, there is a set rule for the flex property. The values correspond to the three properties, namely the flex-grow set to 0, flex-shrink to 1 and flex-basis to auto. The flex-basis sets the initial size of the container. and together they define the rigidity or flexibility and dynamism you want to add to the flexbox. 
+            */
+        }
+
+        .box {
+            background-color: aquamarine;
+            border-radius: 5px;
+            margin: 2px;
+            padding: 10px;
+        }
+
+        .box3 {
+            background-color: blanchedalmond;
+            align-self: center;
+            flex: 1 1 auto;
+            /* 
+            The third box now takes up the entire free space available because flex-growth’s value has been set to 1. So if we have flex-grow set to 1, the children will all set to equal size. And if one of the children has a value of 1.5, that child would take up more space as compared to the others.
+            */
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="box box1">One..</div>
+        <div class="box box2">Two</div>
+        <div class="box box3">Three</div>
+        <div class="box box4">Four</div>
+        <div class="box box5">Five</div>
+        <div class="box box6">Six</div>
+        <div class="box box7">Seven</div>
+    </div>
+</body>
+</html>
