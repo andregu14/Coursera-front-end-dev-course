@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5em;
+    text-shadow: 0 1px 3px rgba(0,0,0,.1);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Open+Sans&display=swap');
+
+
+body {
+    background-color: #EDEFEE;
+    height: fit-content;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #025e83;
+}
+
+h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2.5rem;
+    color: #025e83;
+}
+
+.new {
+    background-color: rgb(3, 159, 159);
+    color: white;
+    padding: 3px;
+}
+
+header img {
+    display: block;
+    margin: 25px auto;
+}
+
+nav ul {
+    margin-top: 30px;
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline-flex;
+}
+
+nav a {
+    text-decoration: none;
+    background-color: rgb(3, 159, 159);
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+nav a:hover {
+    background-color: #02a8a8;
+    transition: 0.4s;
+}
+
+section {
+    display: flex;
+    margin: 100px 5%;
+}
+
+@media (max-width:800px) { 
+    section {
+        flex-direction: column;
+    }
+
+    .secondary {
+        margin: 25px 0;
+    }
+}
+
+article {
+    flex: 1;
+}
+
+.secondary {
+    background-color: rgb(181, 224, 224);
+    margin-right: 10px;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+    opacity: 75%;
+    transition: 0.4s;
+}
+
+.secondary:hover {
+    transform: scale(1.1);
+    opacity: 90%;
+    transition: 0.4s;
+    z-index: 1;
+}
+
+.secondary img {
+    display: block;
+    margin: 12px auto;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 90%;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    background-color: #025e83;
+    padding: 10px 40px;
+    font-size: 18px;
+    border: none;
+    color: white;
+    text-shadow: inherit;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    user-select: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #016b95;
+}
+
+#main p {
+    font-size: 1.2rem;
+}
+
+footer {
+    display: flex;
+    margin-top: 40px;
+    background-color: rgb(2, 168, 168);
+    height: 150px;
+}
+
+footer div {
+    flex: 1;
+}
+
+footer img {
+    display: block;
+    margin: 45px auto;
+}
+
+footer p {
+    display: block;
+    text-align: center;
+    margin: 60px auto;
+}
