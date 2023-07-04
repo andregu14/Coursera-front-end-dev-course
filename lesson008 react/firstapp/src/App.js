@@ -1,19 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-
-function Heading() {
-  return <h1>This is an h1 heading</h1>
-}
-
-function Header() {
-  return <h1>Hello World!</h1>
-}
+import Heading from './Heading';
 
 function App() {
   return (
     <div>
-      <Heading />
-      <Header />
+      <Heading name= 'Andre' color= 'blue'/>
     </div>
   ) 
 }
