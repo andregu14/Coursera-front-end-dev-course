@@ -1,10 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import NumberGuessGame from './components/NumberGuessGame';
+import Child from './components/Child';
 
 function App() {
+  const date = new Date()
+
   return (
-    <NumberGuessGame />
+    <Child message={date.toLocaleTimeString()}/>
   );
 }
 
