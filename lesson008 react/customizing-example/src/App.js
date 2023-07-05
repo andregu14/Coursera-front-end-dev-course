@@ -1,10 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import ModeToggler from './components/ModeToggler';
+import NumberGuessGame from './components/NumberGuessGame';
 
 function App() {
   return (
-    <ModeToggler />
+    <NumberGuessGame />
   );
 }
 
