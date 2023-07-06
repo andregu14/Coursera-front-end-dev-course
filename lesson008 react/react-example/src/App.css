@@ -41,3 +41,9 @@
   display: inline-flex;
   color: white;
 }
+
+.video {
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+}
