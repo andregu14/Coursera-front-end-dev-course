@@ -6,9 +6,9 @@ export default function DessertList(props) {
 
     .sort((a, b) => a.calories - b.calories)
 
-    .map((dessert) => {
+    .map((dessert, index) => {
         return (
-            <li>
+            <li key={index}>
                 {dessert.name} - {dessert.calories} cal
             </li>
         )
