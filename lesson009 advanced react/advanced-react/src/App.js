@@ -1,5 +1,8 @@
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import DessertList from './components/DessertList';
+import Homepage from './components/Homepage';
+import Nav from './components/Nav';
 
 const desserts = [
   {
@@ -27,7 +30,13 @@ const desserts = [
 function App() {
   return (
     <div className="App">
-      <DessertList data={desserts}/>
+      
+      <Nav />
+
+      <Routes>
+      <Route path='/' element={<Homepage />} />
+        <Route path='/desserts' element={<DessertList data={desserts}/>} />
+      </Routes>
     </div>
   );
 }
