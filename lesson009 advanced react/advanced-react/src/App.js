@@ -3,6 +3,7 @@ import './App.css';
 import DessertList from './components/DessertList';
 import Homepage from './components/Homepage';
 import Nav from './components/Nav';
+import Feedback from './components/Feedback';
 
 const desserts = [
   {
@@ -35,7 +36,10 @@ function App() {
 
       <Routes>
       <Route path='/' element={<Homepage />} />
-        <Route path='/desserts' element={<DessertList data={desserts}/>} />
+
+      <Route path='/desserts' element={<DessertList data={desserts}/>} />
+
+      <Route path='/feedback' element={<Feedback />}/>
       </Routes>
     </div>
   );
