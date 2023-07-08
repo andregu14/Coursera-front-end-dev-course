@@ -4,6 +4,7 @@ import DessertList from './components/DessertList';
 import Homepage from './components/Homepage';
 import Nav from './components/Nav';
 import Feedback from './components/Feedback';
+import RegistrationForm from './components/RegistrationForm';
 
 const desserts = [
   {
@@ -40,6 +41,8 @@ function App() {
       <Route path='/desserts' element={<DessertList data={desserts}/>} />
 
       <Route path='/feedback' element={<Feedback />}/>
+
+      <Route path='registration' element={<RegistrationForm />} />
       </Routes>
     </div>
   );
