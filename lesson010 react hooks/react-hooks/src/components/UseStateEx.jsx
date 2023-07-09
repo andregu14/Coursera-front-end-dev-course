@@ -1,4 +1,5 @@
 import { useState } from "react"
+import StateObject from "./StateObject"
 
 const UseStateEx = () => {
     const [randomNumber, setRandomNumber] = useState()
@@ -11,6 +12,7 @@ const UseStateEx = () => {
             <h1>Use State Hook</h1>
             <p>Random number from 0 to 100 = <strong>{randomNumber}</strong></p>
             <button onClick={ () => setRandomNumber(random)}>Click on the button to generate a random number</button>
+            <StateObject />
         </>
      
     )
