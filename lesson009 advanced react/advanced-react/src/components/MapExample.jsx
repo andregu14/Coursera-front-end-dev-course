@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 const data = [ 
     {
         id: "1",
@@ -32,7 +34,10 @@ const topDesserts = data.map(dessert => {
 })
 
 export default function MapExample() {
-    console.log(topDesserts)
+    useEffect(() => {
+        console.log(topDesserts)
+    }, [topDesserts])
+    
     return <h1>Examine the console output</h1>
 }
 
