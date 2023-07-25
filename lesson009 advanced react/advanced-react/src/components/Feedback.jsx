@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 export default function Feedback() {
 
@@ -12,7 +12,10 @@ export default function Feedback() {
         return
     }
 
-    console.log('Form submitted!');
+    useEffect(() => {
+        console.log('Form submitted!');
+    }, [handleSubmit])
+
     setComment("")
     setScore("10")
 }
