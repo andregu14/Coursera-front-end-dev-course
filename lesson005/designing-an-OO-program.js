@@ -272,7 +272,7 @@ class Person {
     }
 }
 // Task 2: Code a Worker class
-class Worker1 extends Person {
+class Worker_ extends Person {
     constructor(xp = 0, hourlyWage = 10, name, age, energy) {
         super(name, age, energy)
         this.xp = xp
@@ -285,13 +285,13 @@ class Worker1 extends Person {
 // Task 3: Code an intern object, run methods
 
 function intern() {
-    let intern = new Worker1('0', 10, 'Bob', 21, 110)
+    let intern = new Worker_('0', 10, 'Bob', 21, 110)
     return intern
 }
 
 // Task 4: Code a manager object, methods
 function manager() {
-    let manager = new Worker1(100, 30, 'Alice', 30, 120)
+    let manager = new Worker_(100, 30, 'Alice', 30, 120)
     manager.doSomethingFun()
     return manager
 }
