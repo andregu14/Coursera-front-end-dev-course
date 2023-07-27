@@ -282,10 +282,29 @@ class Worker_ extends Person {
         this.xp += 10
     }
 }
+
+class Student extends Person {
+    constructor(intelligence = 0, course = 'science', name, age, energy) {
+        super(name, age, energy)
+        this.intelligence = intelligence
+        this.course = course
+    }
+    study() {
+        this.intelligence += 5
+        this.energy -= 20
+    }
+}
 // Task 3: Code an intern object, run methods
+
+function student1() {
+    let student1 = new Student(35, 'math', 'bob', 18, 90)
+    student1.study()
+    return student1
+}
 
 function intern() {
     let intern = new Worker_('0', 10, 'Bob', 21, 110)
+    intern.goToWork()
     return intern
 }
 
