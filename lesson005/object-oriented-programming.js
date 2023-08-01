@@ -40,3 +40,12 @@ var purchase2 = {
     }
 }
 purchase2.totalPrice() // 60
+
+let purchase3 = {
+    shoes: 200,
+    stateTax: 1.2,
+    totalPrice: function() {
+        let calculation = this.shoes * this.stateTax
+        console.log('Total price', calculation);
+    }
+}
