@@ -22,6 +22,8 @@ let myFirstTrain = new Train('red', false)
 console.log(myFirstTrain);
 myFirstTrain.getSelf()
 
+let train2 = new Train('blue', true)
+
 let train4 = new Train('red', false)
 
 // Thus, in conclusion, the class syntax in JavaScript allows us to clearly separate individual object's data - which exists on the object instance itself - from the shared object's functionality (methods), which exist on the prototype and are shared by all object instances.
